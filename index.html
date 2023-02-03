@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3b91611922.js" crossorigin="anonymous"></script>
+</head>
+<body>
+      <div class="togglecontainer">
+        <label class="switch">
+          <input type="checkbox" id="themetoggle">
+          <span class="slider round"></span>
+        </label>
+        <p class="to">Toggle Theme</p>
+      </div>
+      
+    <div id="login-container">
+        <h1>Login</h1>
+        <form>
+          <input type="text" placeholder="Username" required>
+          <input type="password" placeholder="Password" id="password" required>
+          <!-- Show Hide -->
+          <div class="password-toggle">
+            <input type="checkbox" id="toggle-password">
+            <label for="toggle-password">
+               <p class="HideAndShow">Show</p>
+              <span class="eye">
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-eye-slash"></i>
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+          <p>Not a member? <a href="#" id="register-link">Register</a></p>
+        </form>
+      </div>
+      
+      <div id="register-container">
+        <h1>Register</h1>
+        <form >
+          <input type="text" placeholder="Username" required>
+          <input type="email" placeholder="Email" required>
+          <input type="text" placeholder="Password" id="password" required>
+          <button type="submit" class="btn btn-primary">Register</button>
+          <p>Already a member? <a href="#" id="login-link">Login</a></p>
+        </form>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
